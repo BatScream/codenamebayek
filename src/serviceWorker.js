@@ -51,6 +51,8 @@ export function register(config) {
         registerValidSW(swUrl, config);
       }
     });
+  }else{
+    console.log("Environment: ", process.env.NODE_ENV);
   }
 }
 
